@@ -1,0 +1,19 @@
+use_frameworks!
+
+target 'KeyboardNotifications_Example' do
+    
+    pod 'KeyboardNotifications', :path => '../'
+    pod 'Swinject'
+    
+    target 'KeyboardNotifications_Tests' do
+        
+        inherit! :search_paths
+        
+        pod 'Quick'
+        pod 'Nimble'
+        pod 'FBSnapshotTestCase'
+        pod 'Nimble-Snapshots'
+        
+    end
+    
+end

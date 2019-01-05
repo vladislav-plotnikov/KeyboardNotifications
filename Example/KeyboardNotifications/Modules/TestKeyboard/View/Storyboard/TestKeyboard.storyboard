@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qjQ-g8-Aak">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Test Keyboard View Controller-->
+        <scene sceneID="XhR-mO-pQ1">
+            <objects>
+                <viewController storyboardIdentifier="TestKeyboardViewController" id="qjQ-g8-Aak" customClass="TestKeyboardViewController" customModule="KeyboardNotifications_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rlJ-lk-1hG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="interactive" translatesAutoresizingMaskIntoConstraints="NO" id="KUq-qe-TmF">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IIR-xW-ITv">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yOP-gF-iM1">
+                                                <rect key="frame" x="50" y="682" width="275" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OT0-Y3-2yB">
+                                                <rect key="frame" x="50" y="591.66666666666663" width="275" height="20.333333333333371"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstItem="OT0-Y3-2yB" firstAttribute="trailing" secondItem="yOP-gF-iM1" secondAttribute="trailing" id="7VW-Gc-FhC"/>
+                                            <constraint firstAttribute="bottom" secondItem="yOP-gF-iM1" secondAttribute="bottom" priority="999" constant="100" id="8qw-aN-6uz"/>
+                                            <constraint firstItem="yOP-gF-iM1" firstAttribute="leading" secondItem="IIR-xW-ITv" secondAttribute="leading" constant="50" id="Jaf-rX-pyD"/>
+                                            <constraint firstItem="OT0-Y3-2yB" firstAttribute="leading" secondItem="yOP-gF-iM1" secondAttribute="leading" id="Ryv-qe-xjO"/>
+                                            <constraint firstAttribute="trailing" secondItem="yOP-gF-iM1" secondAttribute="trailing" constant="50" id="yBs-Db-UJk"/>
+                                            <constraint firstItem="yOP-gF-iM1" firstAttribute="top" secondItem="OT0-Y3-2yB" secondAttribute="bottom" constant="70" id="zoc-uG-TpO"/>
+                                        </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="Cmu-2C-Qpk" appends="YES" id="tdi-HW-XE1"/>
+                                        </connections>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="IIR-xW-ITv" secondAttribute="bottom" id="9XH-0k-1yh"/>
+                                    <constraint firstItem="IIR-xW-ITv" firstAttribute="leading" secondItem="KUq-qe-TmF" secondAttribute="leading" id="LEw-7D-OaU"/>
+                                    <constraint firstAttribute="trailing" secondItem="IIR-xW-ITv" secondAttribute="trailing" id="SJA-NS-m1g"/>
+                                    <constraint firstItem="IIR-xW-ITv" firstAttribute="top" secondItem="KUq-qe-TmF" secondAttribute="top" id="eLg-i0-oas"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="KUq-qe-TmF" firstAttribute="leading" secondItem="zhn-gB-Pax" secondAttribute="leading" id="T0f-ef-1c9"/>
+                            <constraint firstItem="KUq-qe-TmF" firstAttribute="top" secondItem="rlJ-lk-1hG" secondAttribute="top" id="YEB-qy-hiO"/>
+                            <constraint firstItem="KUq-qe-TmF" firstAttribute="trailing" secondItem="zhn-gB-Pax" secondAttribute="trailing" id="bbB-Pb-f2f"/>
+                            <constraint firstItem="IIR-xW-ITv" firstAttribute="width" secondItem="rlJ-lk-1hG" secondAttribute="width" id="g7v-rt-sOw"/>
+                            <constraint firstItem="IIR-xW-ITv" firstAttribute="height" secondItem="rlJ-lk-1hG" secondAttribute="height" id="lkm-O5-WOI"/>
+                            <constraint firstAttribute="bottom" secondItem="KUq-qe-TmF" secondAttribute="bottom" id="tge-CU-JTR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zhn-gB-Pax"/>
+                    </view>
+                    <connections>
+                        <outlet property="bottomConstraint" destination="8qw-aN-6uz" id="a9Q-km-agB"/>
+                        <outlet property="describerLabel" destination="OT0-Y3-2yB" id="iqB-o7-SBT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ah2-8u-4Zk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Cmu-2C-Qpk">
+                    <connections>
+                        <action selector="tapGestureAction:" destination="qjQ-g8-Aak" id="bps-R3-H37"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="240.80000000000001" y="230.54187192118226"/>
+        </scene>
+    </scenes>
+</document>
