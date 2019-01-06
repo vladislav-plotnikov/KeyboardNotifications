@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		18589C0D04C681081A1C5D5B /* Pods_KeyboardNotifications_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1132A0AEE1A4517990E8EA72 /* Pods_KeyboardNotifications_Example.framework */; };
+		4862B03321E1E1730044F8B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4862B03221E1E1730044F8B1 /* LaunchScreen.storyboard */; };
 		48B7A00321E06176001734F6 /* TestKeyboardAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B79FEE21E06176001734F6 /* TestKeyboardAssembly.swift */; };
 		48B7A00621E06176001734F6 /* TestKeyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48B79FF521E06176001734F6 /* TestKeyboard.storyboard */; };
 		48B7A00721E06176001734F6 /* TestKeyboardViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B79FF721E06176001734F6 /* TestKeyboardViewProtocol.swift */; };
@@ -16,7 +17,6 @@
 		48E253EA21E08FAE0082657C /* TestKeyboard+KeyboardNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E253E921E08FAE0082657C /* TestKeyboard+KeyboardNotifications.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
-		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		7DD4E77C53EDF4B335FFB16A /* Pods_KeyboardNotifications_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13DAE3E992B485CECB2A4AAB /* Pods_KeyboardNotifications_Tests.framework */; };
 /* End PBXBuildFile section */
@@ -37,6 +37,7 @@
 		1132A0AEE1A4517990E8EA72 /* Pods_KeyboardNotifications_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KeyboardNotifications_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		13DAE3E992B485CECB2A4AAB /* Pods_KeyboardNotifications_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KeyboardNotifications_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		28397AC8CE346C0C38877F89 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		4862B03221E1E1730044F8B1 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		48B79FEE21E06176001734F6 /* TestKeyboardAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestKeyboardAssembly.swift; sourceTree = "<group>"; };
 		48B79FF521E06176001734F6 /* TestKeyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TestKeyboard.storyboard; sourceTree = "<group>"; };
 		48B79FF721E06176001734F6 /* TestKeyboardViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestKeyboardViewProtocol.swift; sourceTree = "<group>"; };
@@ -49,7 +50,6 @@
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* KeyboardNotifications_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeyboardNotifications_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
@@ -164,7 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
-				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
+				4862B03221E1E1730044F8B1 /* LaunchScreen.storyboard */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -334,8 +334,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
+				4862B03321E1E1730044F8B1 /* LaunchScreen.storyboard in Resources */,
 				48B7A00621E06176001734F6 /* TestKeyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -480,17 +480,6 @@
 			targetProxy = 607FACE61AFB9204008FA782 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		607FACDE1AFB9204008FA782 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				607FACDF1AFB9204008FA782 /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		607FACED1AFB9204008FA782 /* Debug */ = {

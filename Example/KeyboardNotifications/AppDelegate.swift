@@ -14,10 +14,6 @@ class AppDelegate: UIResponder {
     var window: UIWindow?
     
     private func windowConfig() {
-        if window == nil {
-            window = UIWindow(frame: UIScreen.main.bounds)
-            window?.makeKeyAndVisible()
-        }
         window?.rootViewController = TestKeyboardFabric().moduleCreate()
     }
     
